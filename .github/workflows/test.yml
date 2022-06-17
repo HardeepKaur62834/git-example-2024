@@ -1,26 +1,26 @@
 name: MyWorkflow
 
 # Controls when the workflow will run
-on:
-  push:
-    branches: [ "master" ]
+# on:
+#   push: 
+#     branches: [ "master" ]
 
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
-  job1_Message-with-ubuntu:
-    runs-on: ubuntu-latest
+# jobs:
+#   job1_Message-with-ubuntu:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+#     steps:
+#       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+#       - name: Run a one-line script
+#         run: echo Hello, world!
 
-      - name: Run a multi-line script
-        run: |
-          echo My name is Hardeep Kaur,
-          echo I am from trainee batch2.
+#       - name: Run a multi-line script
+#         run: |
+#           echo My name is Hardeep Kaur,
+#           echo I am from trainee batch2.
   
   # job2_Message-with-windows:
   #   runs-on: windows-latest
@@ -36,7 +36,21 @@ jobs:
   #         echo running my code on windows,
   #         echo taking too much time.
 
-  job3_Run-py-file:
+  # job3_Run-py-file:
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v2
+
+  #     - name: Run a python file
+  #       run: python main.py
+  
+  on:
+  push:
+    paths:
+    - 'scripts/**'
+  job4_Run-demo-file:
     runs-on: ubuntu-latest
 
     steps:
