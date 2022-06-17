@@ -4,7 +4,7 @@ name: MyWorkflow
 on:
   push:
     paths:
-    - 'scripts/**'
+    - '**.py'
 jobs:
   job4_Run-demo-file:
     runs-on: ubuntu-latest
