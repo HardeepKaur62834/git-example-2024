@@ -3,6 +3,8 @@ name: MyWorkflow
 # Controls when the workflow will run
 on:
   push:
+    branches : ["master"]
+  push:
     paths:
     - '**.py'
 jobs:
