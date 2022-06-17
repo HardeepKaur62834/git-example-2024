@@ -1,9 +1,9 @@
 name: MyWorkflow
 
 # Controls when the workflow will run
-# on:
-#   push: 
-#     branches: [ "master" ]
+on:
+  push: 
+    branches: [ "master" ]
 
 #   workflow_dispatch:
 
