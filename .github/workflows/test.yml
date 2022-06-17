@@ -22,19 +22,19 @@ jobs:
           echo My name is Hardeep Kaur,
           echo I am from trainee batch2.
   
-  job2_Message-with-windows:
-    runs-on: windows-latest
+  # job2_Message-with-windows:
+  #   runs-on: windows-latest
 
-    steps:
-      - uses: actions/checkout@v3
+  #   steps:
+  #     - uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: echo Hello, world 2!
+  #     - name: Run a one-line script
+  #       run: echo Hello, world 2!
 
-      - name: Run a multi-line script
-        run: |
-          echo running my code on windows,
-          echo taking too much time.
+  #     - name: Run a multi-line script
+  #       run: |
+  #         echo running my code on windows,
+  #         echo taking too much time.
 
   job3_Run-py-file:
     runs-on: ubuntu-latest
