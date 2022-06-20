@@ -25,7 +25,7 @@ jobs:
 
       - name: Run a python file
         run: | 
-          cd user\new
+          cd user/new
           python demo2.py
 
 
