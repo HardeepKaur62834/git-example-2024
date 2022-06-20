@@ -1,1 +1,1 @@
-print("This is a demo file of")
+print("This is a demo file of python in scripts folder")
