@@ -24,8 +24,7 @@ jobs:
       - uses: actions/setup-python@v2
 
       - name: Run a python file
-        run: | 
-          cd user/new
-          python demo2.py
+        run: python demo2.py
+        working-directory: ./user/new
 
 
