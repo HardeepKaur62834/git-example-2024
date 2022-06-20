@@ -4,11 +4,8 @@ name: MyWorkflow
 on:
   push:
     branches : ["master"]
-  push:
-    paths:
-    - '**.py'
 jobs:
-  job4_Run-demo-file:
+  job1_Run-demo-file:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,5 +14,6 @@ jobs:
 
       - name: Run a python file
         run: python demo.py
+        working-directory: ./scripts
 
 
