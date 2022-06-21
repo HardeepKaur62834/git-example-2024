@@ -38,6 +38,6 @@ jobs:
       #- uses: actions/checkout@v3
 
       -name: details of employee
-        run: echo "$name belongs to $place "
+        run: echo "$name belongs to $place"
 
 
