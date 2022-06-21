@@ -2,6 +2,7 @@ name: MyWorkflow
 on:
   push:
     branches : ["master"]
+  workflow_dispatch
 env:
   name: "Hardeep Kaur"
 
