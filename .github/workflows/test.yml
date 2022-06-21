@@ -1,10 +1,12 @@
 name: MyWorkflow
-
-# Controls when the workflow will run
 on:
   push:
     branches : ["master"]
+env:
+  name: Hardeep Kaur
+  
 jobs:
+
   job1_Run-demo-file:
     runs-on: ubuntu-latest
 
@@ -26,5 +28,15 @@ jobs:
       - name: Run a python file
         run: python demo2.py
         working-directory: ./user/new
+
+  job3_env-variables:
+    runs-on: ubuntu-latest
+
+    place: Punjab
+    steps:
+      - uses: actions/checkout@v3
+
+      -name: details of employee
+        run: echo "$name is belong to $place "
 
 
