@@ -31,8 +31,8 @@ jobs:
 
   job3_env-variables:
     runs-on: ubuntu-latest
-  env:
-    place: Punjab
+    env:
+      place: Punjab
     steps:
       - uses: actions/checkout@v3
 
