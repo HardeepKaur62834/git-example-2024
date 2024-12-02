@@ -21,6 +21,7 @@ jobs:
 
   job2_Run-demo2-file:
     runs-on: ubuntu-latest
+    needs: job1_Run-demo-file
 
     steps:
       - uses: actions/checkout@v3
@@ -32,6 +33,7 @@ jobs:
 
   job3_env-variables:
     runs-on: ubuntu-latest
+    needs: job2_Run-demo2-file
     env:
       place: "Punjab"
     steps:
